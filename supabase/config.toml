@@ -1,0 +1,7 @@
+project_id = "phdxkbjygmtpibqbcpld"
+
+[functions.recognize-food]
+verify_jwt = false
+
+[functions.chat]
+verify_jwt = false
