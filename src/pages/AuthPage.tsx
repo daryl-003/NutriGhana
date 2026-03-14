@@ -122,6 +122,14 @@ export default function AuthPage() {
             </button>
           </form>
 
+          {isLogin && (
+            <div className="mt-3 text-center">
+              <a href="/forgot-password" className="text-xs text-primary hover:underline">
+                Forgot your password?
+              </a>
+            </div>
+          )}
+
           <p className="mt-6 text-center text-xs text-muted-foreground">
             Developed by <span className="font-semibold text-foreground">Daryl Tech & Educational Network</span>
           </p>

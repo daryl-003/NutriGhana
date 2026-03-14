@@ -79,7 +79,7 @@ async function streamChat({
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
-    { id: "1", role: "assistant", content: "Akwaaba! 🇬🇭 I'm your NutriGhana AI assistant. Ask me about Ghanaian meals, nutrition, or diet recommendations!" },
+    { id: "1", role: "assistant", content: "Akwaaba! 🇬🇭 I'm your NutriGhana AI assistant. Ask me about Ghanaian meals, nutrition, anything concerning health and meals, or diet recommendations!" },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);

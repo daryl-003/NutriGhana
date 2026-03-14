@@ -1,9 +1,10 @@
-import { Home, Camera, MessageCircle, BarChart3, User } from "lucide-react";
+import { Home, Camera, MessageCircle, BarChart3, User, CalendarDays } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const navItems = [
   { path: "/", label: "Home", icon: Home },
   { path: "/scan", label: "Scan", icon: Camera },
+  { path: "/meal-plan", label: "Plan", icon: CalendarDays },
   { path: "/chat", label: "AI Chat", icon: MessageCircle },
   { path: "/trends", label: "Trends", icon: BarChart3 },
   { path: "/profile", label: "Profile", icon: User },
@@ -22,7 +23,7 @@ export default function BottomNav() {
             <button
               key={item.path}
               onClick={() => navigate(item.path)}
-              className={`flex flex-col items-center gap-0.5 px-3 py-1.5 transition-colors ${
+              className={`flex flex-col items-center gap-0.5 px-2 py-1.5 transition-colors ${
                 active ? "text-primary" : "text-muted-foreground"
               }`}
             >

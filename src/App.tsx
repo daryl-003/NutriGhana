@@ -10,7 +10,10 @@ import ScanPage from "./pages/ScanPage";
 import ChatPage from "./pages/ChatPage";
 import ProfilePage from "./pages/ProfilePage";
 import TrendsPage from "./pages/TrendsPage";
+import MealPlanPage from "./pages/MealPlanPage";
 import AuthPage from "./pages/AuthPage";
+import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import ResetPasswordPage from "./pages/ResetPasswordPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +41,7 @@ function ProtectedRoutes() {
         <Route path="/scan" element={<ScanPage />} />
         <Route path="/chat" element={<ChatPage />} />
         <Route path="/trends" element={<TrendsPage />} />
+        <Route path="/meal-plan" element={<MealPlanPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
@@ -62,6 +66,8 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/auth" element={<AuthGuard />} />
+            <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+            <Route path="/reset-password" element={<ResetPasswordPage />} />
             <Route path="/*" element={<ProtectedRoutes />} />
           </Routes>
         </BrowserRouter>
